@@ -1,0 +1,36 @@
+{
+  "name": "@example/starter",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "prepare": "husky install",
+    "format": "prettier --write src/**/*.ts{,x}",
+    "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
+    "lint:format": "prettier --write --ignore-path .gitignore \"**/*.+(js|json)\"",
+    "lint": "npm-run-all --parallel lint:format lint:fix"
+  },
+  "devDependencies": {
+    "@astrojs/renderer-react": "^0.4.1",
+    "astro": "^0.22.20",
+    "husky": "^7.0.4",
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@typescript-eslint/parser": "^5.6.0",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "lint-staged": "^12.1.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.5.1",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0"
+  },
+  "dependencies": {}
+}
